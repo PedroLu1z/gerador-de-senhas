@@ -1,0 +1,107 @@
+*{
+    font-family: sans-serif;
+    width: 100%;
+    margin:0 auto;
+    box-sizing: border-box;
+}
+body{
+    background-color: #181818;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    max-width: 37.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.container-input{
+    max-width: 30rem;
+    margin: 0.875rem 0;
+}
+
+.container-input span{
+    color: #fff;
+    font-size: 1.375rem;
+}
+
+.slider{
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 0.313rem;
+    background-color: #dfdfdf;
+    height: 1.125rem;
+    outline: none;
+    margin-top: 0.5rem;
+}
+
+.button-cta{
+    height: 2.5rem;
+    background-color: #3eb72b;
+    border: 0;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    margin-top: 2.5rem;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+
+.container-password{
+    max-width: 30rem;
+    margin: 0.875rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.title{
+    text-align: center;
+    color: #fff;
+    font-size: 1.813rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.password{
+    height: 3.75rem;
+    background-color: rgba(0, 0, 0, 0.40);
+    border-radius: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: 0.063rem solid #313131;
+    transition: transform 0.5s;
+}
+
+.password:hover{
+    transform: scale(1.05);
+}
+
+.tooltip{
+    color: #fff;
+    position: relative;
+    top: 1.25rem;
+    padding: 0.375rem 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.375rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.hide{
+    display: none;
+}
+
+.container-password:hover .tooltip{
+   visibility: visible;
+   bottom: 3.125rem;
+   opacity: 1;
+}
